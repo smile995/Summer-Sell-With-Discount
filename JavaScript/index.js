@@ -13,7 +13,8 @@ function handleClickOnDiv(target) {
     total = total + priceNumber;
     const setTotal = document.getElementById('totalPrice');
     setTotal.innerText = total;
-
+    const btn=document.getElementById('applyBtn')
+    
     document.getElementById('applyBtn').addEventListener('click', function () {
         const couponText = document.getElementById('couponText').value
         if (couponText === 'SELL200') {
