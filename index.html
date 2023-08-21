@@ -156,6 +156,65 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- furniture section -->
+                    <h1 class="my-5 text-4xl text-center lg:text-start">Furniture</h1>
+                    <div class="grid grid-cols-1  lg:grid-cols-3 gap-5 flex-1">
+                        <!-- Single Relax Chair -->
+                        <div class="card  bg-base-100 shadow-xl h-fit" onclick="handleClickOnDiv(this)">
+                            <figure class=" py-5 bg-gray-100 m-3 rounded">
+                                <img src="./images/prod7.png" class="" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <h2 class="text-xl font-bold">Single Relax Chair</h2>
+                                <p class="text-[#11111180] text-lg"><span>185.00 </span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Children play -->
+                        <div class="card  bg-base-100 shadow-xl h-fit" onclick="handleClickOnDiv(this)">
+                            <figure class=" py-5 bg-gray-100 m-3 rounded">
+                                <img src="./images/prod8.png" class="" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <h2 class="text-xl font-bold">Children play</h2>
+                                <p class="text-[#11111180] text-lg"><span>299.00 </span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Flexible Sofa -->
+                        <div class="card  bg-base-100 shadow-xl h-fit" onclick="handleClickOnDiv(this)">
+                            <figure class=" py-5 bg-gray-100 m-3 rounded">
+                                <img src="./images/prod9.png" class="" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <h2 class="text-xl font-bold">Flexible Sofa</h2>
+                                <p class="text-[#11111180] text-lg"><span>339.00 </span> TK</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- calculation parts -->
                 <div class="flex ">
@@ -168,9 +227,11 @@
                                 id="applyBtn">Apply</button>
                         </div>
                         <div class="p-5 bg-slate-100 rounded-md mt-5 gap-3">
-                            <div id="selectedItemsContainer">
 
-                            </div>
+                            <ol id="selectedItemsContainer">
+
+                            </ol>
+
                             <hr class="my-5">
                             <h1 class="text-lg font-bold mt-2 ">Total Price: <span class="text-[#1111117F]"
                                     id="totalPrice">00</span> TK</h1>
@@ -179,17 +240,19 @@
                             <h1 class="text-lg font-bold mt-2">Total: <span class="text-[#1111117F]"
                                     id="AfterDiscount">00</span> TK</h1>
                             <div>
-                                <button class="btn bg-[#E527B2] text-xl text-white w-full mt-2" onclick="my_modal_4.showModal()">Make Purchase</button>
+                                <button class="btn bg-[#E527B2] text-xl text-white w-full mt-2"
+                                    onclick="my_modal_4.showModal()">Make Purchase</button>
                                 <dialog id="my_modal_4" class="modal">
                                     <form method="dialog" class="modal-box text-center">
                                         <div class="flex justify-center">
-                                            <img src="./images/congo.png" alt="" >
+                                            <img src="./images/congo.png" alt="">
                                         </div>
                                         <h3 class="font-bold text-lg">Congratulations</h3>
                                         <p class="py-4">Your Purchase the product</p>
-                                        <div >
+                                        <div>
                                             <!-- if there is a button, it will close the modal -->
-                                            <button class="btn text-white bg-[#E527B2]" id="makePurchase">Go Home</button>
+                                            <button class="btn text-white bg-[#E527B2]" id="makePurchase">Go
+                                                Home</button>
                                         </div>
                                     </form>
                                 </dialog>
@@ -198,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <!-- sportsware section -->
+
 
 
 
