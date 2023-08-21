@@ -13,15 +13,19 @@ function handleClickOnDiv(target) {
     total = total + priceNumber;
     const setTotal = document.getElementById('totalPrice');
     setTotal.innerText = total;
-    const btn=document.getElementById('applyBtn')
+    
     
     document.getElementById('applyBtn').addEventListener('click', function () {
         const couponText = document.getElementById('couponText').value
-        if (couponText === 'SELL200') {
+        if (couponText === 'SELL200'&& total>=200) {
             const discount = (20 * total) / 100;
             document.getElementById('discount').innerText = discount;
             const AfterDiscount = total - discount;
             document.getElementById('AfterDiscount').innerText = AfterDiscount;
+        }
+
+        else{
+          document.getElementById('AfterDiscount').innerText = total;
         }
     })
 
