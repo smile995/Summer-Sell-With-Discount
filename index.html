@@ -164,18 +164,36 @@
                             <h1 class="text-2xl mb-2">Have coupon?</h1>
                             <input placeholder="Coupon code" type="text" name="" id="couponText"
                                 class="px-3 py-1 rounded border-fuchsia-700 border-transparent ">
-                            <button class="bg-[#E527B2] px-3 py-1 rounded text-white inline " id="applyBtn">Apply</button>
+                            <button class="bg-[#E527B2] px-3 py-1 rounded text-white inline "
+                                id="applyBtn">Apply</button>
                         </div>
                         <div class="p-5 bg-slate-100 rounded-md mt-5 gap-3">
                             <div id="selectedItemsContainer">
 
                             </div>
                             <hr class="my-5">
-                            <h1 class="text-lg font-bold mt-2 ">Total Price: <span class="text-[#1111117F]" id="totalPrice" >00</span> TK</h1>
-                            <h1 class="text-lg font-bold mt-2" >Discount: <span class="text-[#1111117F]" id="discount">00</span> TK</h1>
-                            <h1 class="text-lg font-bold mt-2">Total: <span class="text-[#1111117F]" id="AfterDiscount">00</span> TK</h1>
-                            <button class="bg-[#E527B2] rounded text-white text-xl px-5 py-3 w-full mt-2" id="makePurchase">Make
-                                Purchase</button>
+                            <h1 class="text-lg font-bold mt-2 ">Total Price: <span class="text-[#1111117F]"
+                                    id="totalPrice">00</span> TK</h1>
+                            <h1 class="text-lg font-bold mt-2">Discount: <span class="text-[#1111117F]"
+                                    id="discount">00</span> TK</h1>
+                            <h1 class="text-lg font-bold mt-2">Total: <span class="text-[#1111117F]"
+                                    id="AfterDiscount">00</span> TK</h1>
+                            <div>
+                                <button class="btn bg-[#E527B2] text-xl text-white w-full mt-2" onclick="my_modal_4.showModal()">Make Purchase</button>
+                                <dialog id="my_modal_4" class="modal">
+                                    <form method="dialog" class="modal-box text-center">
+                                        <div class="flex justify-center">
+                                            <img src="./images/congo.png" alt="" >
+                                        </div>
+                                        <h3 class="font-bold text-lg">Congratulations</h3>
+                                        <p class="py-4">Your Purchase the product</p>
+                                        <div >
+                                            <!-- if there is a button, it will close the modal -->
+                                            <button class="btn text-white bg-[#E527B2]" id="makePurchase">Go Home</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
                         </div>
                     </div>
                 </div>

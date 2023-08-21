@@ -27,7 +27,11 @@ function handleClickOnDiv(target) {
 
 
   document.getElementById('makePurchase').addEventListener('click',function(){
-    
+    document.getElementById('AfterDiscount').innerText = '';
+    couponText.value='';
+    setTotal.innerText = '';
+    document.getElementById('discount').innerText = '';
+    h5.innerText = '';
   })
 
 
