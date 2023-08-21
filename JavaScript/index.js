@@ -31,10 +31,10 @@ function handleClickOnDiv(target) {
 
 
   document.getElementById('makePurchase').addEventListener('click',function(){
-    document.getElementById('AfterDiscount').innerText = '';
+    document.getElementById('AfterDiscount').innerText = '00';
     couponText.value='';
-    setTotal.innerText = '';
-    document.getElementById('discount').innerText = '';
+    setTotal.innerText = '00';
+    document.getElementById('discount').innerText = '00';
     li.innerText = '';
   })
 
