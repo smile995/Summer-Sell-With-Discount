@@ -15,17 +15,22 @@ function handleClickOnDiv(target) {
     const setTotal = document.getElementById('totalPrice');
     setTotal.innerText = total;
 
-    
-    
+    document.getElementById('applyBtn').addEventListener('click', function () {
+        const couponText = document.getElementById('couponText').value
+        if (couponText === 'SELL200') {
+            const discount = (20 * total) / 100;
+            document.getElementById('discount').innerText = discount;
+            const AfterDiscount = total - discount;
+            document.getElementById('AfterDiscount').innerText = AfterDiscount;
+        }
+    })
 
-    if(total>=200){
-        const discount=(20*total)/100;
-        document.getElementById('discount').innerText=discount;
-        const AfterDiscount=total-discount;
-        document.getElementById('AfterDiscount').innerText=AfterDiscount;
-    }
 
+  document.getElementById('makePurchase').addEventListener('click',function(){
     
+  })
+
+
 
 
 }
